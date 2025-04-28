@@ -1,3 +1,4 @@
+import 'package:car_rental_app/views/details_page.dart';
 import 'package:car_rental_app/views/home_page.dart';
 import 'package:car_rental_app/views/home_page2.dart';
 import 'package:flutter/material.dart';
@@ -12,8 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
    debugShowCheckedModeBanner: false,
-      home: HomePage2(),
+      home: const DetailsPage(),
     );
 
   }
