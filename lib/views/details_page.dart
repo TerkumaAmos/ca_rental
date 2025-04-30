@@ -35,7 +35,7 @@ class DetailsPage extends StatelessWidget {
                   Container(
                     width: 60,
                     height: 60,
-                    child: Icon(Icons.more_vert),
+                    child: const Icon(Icons.more_vert),
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color:Colors.white,
