@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:model_viewer_plus/model_viewer_plus.dart';
 
-
 class DetailsPage extends StatelessWidget {
   const DetailsPage({super.key});
 
@@ -17,63 +16,72 @@ class DetailsPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                   Container(
-                     margin: EdgeInsets.only(left: 10),
-                     width: 50,
-                     height: 50,
-                     decoration: BoxDecoration(
-                       shape: BoxShape.circle,
-                           color:Colors.grey.withOpacity(0.2),
-          
-                     ),
-                     child: Icon(Icons.arrow_back,size: 30,),
-                   ),
+                  Container(
+                    margin: EdgeInsets.only(left: 10),
+                    width: 50,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.grey.withOpacity(0.2),
+                    ),
+                    child: Icon(Icons.arrow_back, size: 30),
+                  ),
                   SizedBox(width: 50),
-          
-                  Text('Car Details',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24),),
-                  SizedBox(width: 50,),
+
+                  Text(
+                    'Car Details',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                  ),
+                  SizedBox(width: 50),
                   Container(
                     width: 60,
                     height: 60,
-                    child: const Icon(Icons.more_vert),
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color:Colors.white,
-          
-          
+                      color: Colors.white,
                     ),
+                    child: const Icon(Icons.more_vert),
                   ),
                 ],
               ),
               SizedBox(height: 30),
-          
+
               Padding(
                 padding: const EdgeInsets.only(left: 20.0),
-                child: Text('Lamborghini',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
+                child: Text(
+                  'Lamborghini',
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 20.0),
-                child: Text('Urus Performante- 2023',style: TextStyle(color: Colors.grey,fontSize: 16),),
+                child: Text(
+                  'Urus Performante- 2023',
+                  style: TextStyle(color: Colors.grey, fontSize: 16),
+                ),
               ),
               SizedBox(height: 10),
-          
+
               SizedBox(
                 height: 200,
-                  width: double.infinity,
-                  child: ModelViewer(src: "assets/pubg_mobile_green_lambo_2022.glb",
-                    autoRotate: true,
-                  ),
+                width: double.infinity,
+                child: ModelViewer(
+                  src: "assets/pubg_mobile_green_lambo_2022.glb",
+                  autoRotate: true,
+                ),
               ),
               SizedBox(height: 30),
-          
+
               Padding(
-                padding: const EdgeInsets.only(left :20.0),
-                child: Text('Features Highlights',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+                padding: const EdgeInsets.only(left: 20.0),
+                child: Text(
+                  'Features Highlights',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
               ),
               SizedBox(height: 20),
-          
+
               Row(
-          
                 children: [
                   Container(
                     padding: EdgeInsets.only(top: 10),
@@ -82,94 +90,95 @@ class DetailsPage extends StatelessWidget {
                     height: 130,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(20)
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(
                       children: [
                         Container(
-                          width:50,
+                          width: 50,
                           height: 40,
-                          decoration:BoxDecoration(
-                            shape: BoxShape.circle,color: Colors.grey.withOpacity(0.3)
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.grey.withOpacity(0.3),
                           ),
-                            child: Icon(
-                              Icons.person_2,
-                              size:20,
-                            ),
+                          child: Icon(Icons.person_2, size: 20),
                         ),
                         SizedBox(height: 10),
-          
+
                         Text('Capacity'),
                         SizedBox(height: 4),
-                        Text('4 Seats',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),)
-          
+                        Text(
+                          '4 Seats',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
                       ],
                     ),
                   ),
-                  SizedBox(width: 10,),
-          
+                  SizedBox(width: 10),
+
                   Container(
-                    padding:EdgeInsets.only(top:10),
-          
+                    padding: EdgeInsets.only(top: 10),
+
                     width: 120,
                     height: 130,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                  borderRadius: BorderRadius.circular(20)
-          
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(
                       children: [
                         Container(
-          
-                            width:50,
+                          width: 50,
                           height: 40,
-                          decoration:BoxDecoration(
+                          decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                                color:Colors.grey.withOpacity(0.3),
+                            color: Colors.grey.withOpacity(0.3),
                           ),
-                            child: Icon(
-                              Icons.bolt,
-                              size: 30,
-                            ),
+                          child: Icon(Icons.bolt, size: 30),
                         ),
                         SizedBox(height: 10),
-          
+
                         Text('Power'),
                         SizedBox(height: 4),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('657',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
-                            Text('Hp')
+                            Text(
+                              '657',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text('Hp'),
                           ],
                         ),
-          
                       ],
                     ),
                   ),
-                  SizedBox(width: 10,),
-          
+                  SizedBox(width: 10),
+
                   Container(
-                 padding: EdgeInsets.only(top: 10),
+                    padding: EdgeInsets.only(top: 10),
                     width: 120,
                     height: 130,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                     borderRadius: BorderRadius.circular(20)
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(
                       children: [
                         Container(
-                            width:50,
-                            height:40,
+                          width: 50,
+                          height: 40,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                           color: Colors.grey.withOpacity(0.3)
+                            color: Colors.grey.withOpacity(0.3),
                           ),
-                            child: Icon(
-                                Icons.shutter_speed,
-                            ),
+                          child: Icon(Icons.shutter_speed),
                         ),
                         SizedBox(height: 10),
                         Text('Top Speed'),
@@ -177,10 +186,16 @@ class DetailsPage extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('301',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
+                            Text(
+                              '301',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                             Text('Km/h'),
                           ],
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -188,7 +203,6 @@ class DetailsPage extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Row(
-          
                 children: [
                   Container(
                     padding: EdgeInsets.only(top: 10),
@@ -196,94 +210,98 @@ class DetailsPage extends StatelessWidget {
                     width: 120,
                     height: 130,
                     decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(20)
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(
                       children: [
                         Container(
-                          width:50,
+                          width: 50,
                           height: 40,
-                          decoration:BoxDecoration(
-                              shape: BoxShape.circle,color: Colors.grey.withOpacity(0.3)
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.grey.withOpacity(0.3),
                           ),
                           child: Icon(
                             Icons.local_gas_station_rounded,
-                            size:20,
+                            size: 20,
                           ),
                         ),
                         SizedBox(height: 10),
-          
+
                         Text('Fuel Type'),
                         SizedBox(height: 4),
-                        Text('Petrol',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),)
-          
+                        Text(
+                          'Petrol',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
                       ],
                     ),
                   ),
-                  SizedBox(width: 10,),
-          
+                  SizedBox(width: 10),
+
                   Container(
-                    padding:EdgeInsets.only(top:10),
-          
+                    padding: EdgeInsets.only(top: 10),
+
                     width: 120,
                     height: 130,
                     decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(20)
-          
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(
                       children: [
                         Container(
-          
-                          width:50,
+                          width: 50,
                           height: 40,
-                          decoration:BoxDecoration(
+                          decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color:Colors.grey.withOpacity(0.3),
+                            color: Colors.grey.withOpacity(0.3),
                           ),
-                          child: Icon(
-                            Icons.car_rental_outlined,
-                            size: 30,
-                          ),
+                          child: Icon(Icons.car_rental_outlined, size: 30),
                         ),
                         SizedBox(height: 10),
-          
+
                         Text('Engine'),
                         SizedBox(height: 4),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('TB V8',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
+                            Text(
+                              'TB V8',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ],
                         ),
-          
                       ],
                     ),
                   ),
-                  SizedBox(width: 10,),
-          
+                  SizedBox(width: 10),
+
                   Container(
                     padding: EdgeInsets.only(top: 10),
                     width: 120,
                     height: 130,
                     decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(20)
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(
                       children: [
                         Container(
-                          width:50,
-                          height:40,
+                          width: 50,
+                          height: 40,
                           decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: Colors.grey.withOpacity(0.3)
+                            shape: BoxShape.circle,
+                            color: Colors.grey.withOpacity(0.3),
                           ),
-                          child: Icon(
-                            Icons.crop_square_outlined,
-                          ),
+                          child: Icon(Icons.crop_square_outlined),
                         ),
                         SizedBox(height: 10),
                         Text('Cubic Feet'),
@@ -291,10 +309,15 @@ class DetailsPage extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('21.7',style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
-          
+                            Text(
+                              '21.7',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ],
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -306,17 +329,23 @@ class DetailsPage extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(left: 20.0),
-                    child: Text('Rent Price:',style: TextStyle(fontSize: 16),),
+                    child: Text('Rent Price:', style: TextStyle(fontSize: 16)),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(right: 20.0),
                     child: Row(
                       children: [
-                        Text('\$500',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
-                        Text('/Daily')
+                        Text(
+                          '\$500',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
+                        Text('/Daily'),
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
               SizedBox(height: 20),
@@ -325,28 +354,30 @@ class DetailsPage extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.only(left: 10),
-          
+
                     width: 60,
-                      height: 50,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                            shape:BoxShape.circle,
-                      ),
-                      child: Icon(
-                          Icons.bookmark_border,
-                      ),
+                    height: 50,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(Icons.bookmark_border),
                   ),
                   Container(
                     width: 300,
-                    height:60,
+                    height: 60,
                     decoration: BoxDecoration(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: Center(child: Text('Book Car Now',style: TextStyle(color: Colors.white),)),
+                    child: Center(
+                      child: Text(
+                        'Book Car Now',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ),
                 ],
-          
               ),
             ],
           ),
