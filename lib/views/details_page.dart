@@ -67,7 +67,7 @@ class DetailsPage extends StatelessWidget {
                 width: double.infinity,
                 child: ModelViewer(
                   src: "assets/pubg_mobile_green_lambo_2022.glb",
-                  autoRotate: true,
+                  autoRotate: false,
                 ),
               ),
               SizedBox(height: 30),
